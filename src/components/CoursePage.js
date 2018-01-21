@@ -8,12 +8,12 @@ class CoursePage extends Component {
       super(props);
       this.state = {
         courseId : this.props.match.params.courseId,
-        course : ""
+        course: ""
       };
 
     }
 
-    componentDidMount() {
+    componentWillMount() {
         const courseRef = firebase.database().ref('/courses/' + this.state.courseId);
         courseRef.once('value', (snapshot) => {
           this.setState({
@@ -22,16 +22,31 @@ class CoursePage extends Component {
         })
     }
 
+    renderSubmodules(){
+      if (this.state.course.submodules){
+        return (
+          this.state.course.submodules.map((submodule, index) => {
+            return (
+              <ModulePreview key={index} course={this.state.course} index={index}/>
+            ) 
+          }
+        ));
+      }
+      else{
+        return (<span />);
+      }
+    }
+
     render() {
       return (
           <div className="main-page-container">
             <div className="course-title-container">
-              <h2>{this.state.course.title}</h2>
+              <h2>{this.state.course ? this.state.course.title : ""}</h2>
             </div>
 
             <div className="course-modules-container">
-              <ModulePreview course={this.state.course}/>
-              <ModulePreview course={this.state.course}/>
+
+            {this.renderSubmodules()}
             </div>
 
           </div>
