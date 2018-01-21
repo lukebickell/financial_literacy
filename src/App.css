@@ -22,6 +22,7 @@ h1 {
 h2 {
   font-size: 5vw;
   font-family: 'Muli',sans-serif;
+  margin-bottom: 0;
 }
 
 p {
@@ -30,7 +31,7 @@ p {
   margin-left: 80px;
 }
 
-span {
+.text-highlight{
   background-color: #000;
   height: 50px;
   color: #FFF;
@@ -126,12 +127,15 @@ span {
 }
 
 .courses-container{
+  padding: 10px;
 }
 
 .course-box-wrapper{
   display: inline-block;
   float: left;
   margin: 12px;
+  margin-top:84px;
+
 
 }
 
@@ -142,10 +146,16 @@ span {
   vertical-align: middle;
   border-radius: 30px;
   color: black;
-  border: 5px solid;
+  border: 3px solid;
   border-color: black;
   margin: 20;
   height: 60px;
   width: 60px;
   padding: 30px;
+  box-shadow: 6px 6px 3px rgba(0,0,0,.3);
+  user-select: none;
+}
+
+.course-box:hover{
+  box-shadow: 6px 6px 3px rgba(0,0,0,.6);
 }

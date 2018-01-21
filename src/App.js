@@ -8,6 +8,8 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Home from "./components/Home";
 import Courses from "./components/Courses";
+import CoursePage from "./components/CoursePage";
+
 
 class App extends Component {
 
@@ -19,6 +21,7 @@ class App extends Component {
           <NavBar/>
           <Route exact path="/" component={Home}/>
           <Route exact path="/lessons" component={Courses}/>
+          <Route path="/courses/:course" component={CoursePage}/>
         </div>
       </Router>
     );

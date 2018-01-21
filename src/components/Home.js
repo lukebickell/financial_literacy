@@ -22,7 +22,7 @@ class Home extends Component {
         <div>
           <div className="main-page-container">
             <div>
-              <h1 className="bigTitle">Get to know your <span>finances</span></h1>
+              <h1 className="bigTitle">Get to know your <span className="text-highlight">finances</span></h1>
             </div>
 
             <br/><br/><br/>
