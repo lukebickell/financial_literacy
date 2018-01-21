@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  Link,
+  DefaultRoute,
+  RouteHandler
 } from 'react-router-dom';
 
 
