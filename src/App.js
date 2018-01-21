@@ -18,9 +18,10 @@ class App extends Component {
       <Router>
         <div>
           <NavBar/>
-          <Route exact path="/" component={Home}/>
-          <Route exact path="/lessons" component={Courses}/>
-          <Route path="/courses/:courseId" component={CoursePage}/>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/lessons" component={Courses} />
+          <Route path="/courses/:courseId" component={CoursePage} />
+          <Route path="/courses/:courseId/:submoduleId" />
         </div>
       </Router>
     );

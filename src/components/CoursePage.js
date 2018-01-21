@@ -27,7 +27,7 @@ class CoursePage extends Component {
         return (
           this.state.course.submodules.map((submodule, index) => {
             return (
-              <ModulePreview key={index} course={this.state.course} index={index}/>
+              <ModulePreview key={index} course={this.state.course} index={index} courseId={this.state.courseId}/>
             ) 
           }
         ));
