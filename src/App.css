@@ -1,28 +1,151 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Muli:800');
+
+nav {
+  background-color:rgb(255,255,255);
+  overflow: hidden;
+  padding: 0;
+  margin-top: 0;
+  background: #000;
+}
+
+body{
+  background: #aee5b7;
+}
+
+h1 {
+  font-size: 11vw; /*200px;*/
+  line-height: .9;
+  align-content: center;
+  margin: 0;
+}
+
+h2 {
+  font-size: 5vw;
+  font-family: 'Muli',sans-serif;
+}
+
+p {
+  font-family: 'Futura','Muli',sans-serif;
+  font-size: 24px;
+  margin-left: 80px;
+}
+
+span {
+  background-color: #000;
+  height: 50px;
+  color: #FFF;
+  opacity: .6;
+}
+
+.main-page-container{
+  height: 100%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.webHeader {
+  display: flex;
+  height: 50%;
+}
+
+.bigTitle {
+  font-family: 'Times New Roman', sans-serif;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.subTitle {
+  width: 100% auto;
+  height: auto; /* Or whatever */
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 25px;
+}
+
+.leftbutton {
+  float: left;
+  margin: 5px;
+}
+
+.rightbutton {
+  float: right;
+  margin: 5px;
+}
+
+.center-content {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.quizButton {
+  text-align: center;
+
+  background-color: #000;
+  color: #FFF;
+  border: none;
+  border-radius: 20px;
+  cursor:pointer;
+  overflow: hidden;
+  font-family: 'Clarendon',sans-serif;
+  font-size: 30px;
+  width: 250px;
+  padding:10px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.homebutton {
+  background-color: #000;
+  color: #FFF;
+  background-repeat:no-repeat;
+  border: none;
+  border-radius: 20px;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  font-family: 'Futura','Muli',sans-serif;
+  font-size: 20px;
 }
 
-.App-title {
-  font-size: 1.5em;
+.homebutton:hover, .centerButton:hover{
+  color: #A5B452;
 }
 
-.App-intro {
-  font-size: large;
+.discreteButton {
+  background: none;
+  color: #A5B452;
+  border: none;
+  border-radius: 20px;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  font-family: 'Futura','Muli',sans-serif;
+  font-size: 25px;
+  width: 150px;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.courses-container{
+}
+
+.course-box-wrapper{
+  display: inline-block;
+  float: left;
+  margin: 12px;
+
+}
+
+.course-box{
+  background: #72d883;
+  font-weight: bold;
+  font-size: 24px;
+  vertical-align: middle;
+  border-radius: 30px;
+  color: black;
+  border: 5px solid;
+  border-color: black;
+  margin: 20;
+  height: 60px;
+  width: 60px;
+  padding: 30px;
 }
