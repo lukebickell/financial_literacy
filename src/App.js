@@ -55,7 +55,7 @@ class App extends Component {
 
           <MatchWithFade exact path="/" component={Home}/>
           <MatchWithFade exact path="/lessons" component={Courses}/>
-          <MatchWithFade path="/courses/:course" component={CoursePage}/>
+          <MatchWithFade path="/courses/:courseId" component={CoursePage}/>
           <MatchWithFade path="/courses/:courseId/:submoduleId" />
 
         </div>
