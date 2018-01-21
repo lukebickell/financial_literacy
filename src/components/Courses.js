@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import firebase from '../firebase';
-import '../App.css';
 
 class Courses extends Component {
   constructor(props) {
@@ -38,9 +37,9 @@ class Courses extends Component {
           
           {this.state.courses.map((course) => {
             return (
-              <Link to={`/courses/${course.title}`}>
+              <Link key={course.id} to={`/courses/${course.id}`}>
                 <div className="course-box-wrapper">
-                  <span className="course-box">
+                  <span  className="course-box">
                     {course.title}
                   </span>
                 </div>

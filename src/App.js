@@ -4,7 +4,6 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
-import './App.css';
 import NavBar from './components/NavBar';
 import Home from "./components/Home";
 import Courses from "./components/Courses";
@@ -21,7 +20,7 @@ class App extends Component {
           <NavBar/>
           <Route exact path="/" component={Home}/>
           <Route exact path="/lessons" component={Courses}/>
-          <Route path="/courses/:course" component={CoursePage}/>
+          <Route path="/courses/:courseId" component={CoursePage}/>
         </div>
       </Router>
     );

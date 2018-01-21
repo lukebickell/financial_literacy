@@ -9,7 +9,15 @@ nav {
 }
 
 body{
-  background: #aee5b7;
+  background: #384D48;
+  min-height: 100%;
+  margin:0;
+  overflow:hidden;
+  font-family: sans-serif;
+}
+
+html{
+  height:100%;
 }
 
 h1 {
@@ -21,8 +29,16 @@ h1 {
 
 h2 {
   font-size: 5vw;
-  font-family: 'Muli',sans-serif;
+  font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
   margin-bottom: 0;
+  margin-top: 0;
+}
+
+h3 {
+  padding: 10px;
+  padding-left: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 p {
@@ -32,18 +48,25 @@ p {
 }
 
 .text-highlight{
-  background-color: #000;
+  background-color: #384D48;
   height: 50px;
   color: #FFF;
-  opacity: .6;
 }
 
 .main-page-container{
-  height: 100%;
+  height: 100vh;
   margin-left: 15%;
   margin-right: 15%;
+  background: #aee5b7;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
+.main-page-container > h2 {
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .webHeader {
   display: flex;
   height: 50%;
@@ -140,12 +163,12 @@ p {
 }
 
 .course-box{
-  background: #72d883;
+  background: #384D48;
   font-weight: bold;
   font-size: 24px;
   vertical-align: middle;
   border-radius: 30px;
-  color: black;
+  color: white;
   border: 3px solid;
   border-color: black;
   margin: 20;
@@ -158,4 +181,65 @@ p {
 
 .course-box:hover{
   box-shadow: 6px 6px 3px rgba(0,0,0,.6);
+}
+
+.course-title-container{
+  text-align: center;
+  padding-top: 60px;
+}
+
+.course-modules-container{
+  padding: 20px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.module-preview-box{
+  background: white;
+  border-top-style: solid;
+  border-top-width: 6px;
+  border-top-color: #384D48;
+  border-radius: 5px;
+  width: 40%;
+  height: 150px;
+  margin: 30px;
+  float: left;
+  box-shadow: 6px 6px 3px rgba(0,0,0,.3);
+  transition: box-shadow .7s;
+  position:relative;
+}
+
+.module-preview-box:hover{
+  box-shadow: 6px 6px 3px rgba(0,0,0,.6);
+}
+
+.module-description-text{
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.module-progress-container{
+  background: white;
+  box-shadow: inset 1px -2px 3px rgba(0, 0, 0, 0.5); 
+  margin:0;
+  width:100%;
+  display:block;
+  position:absolute;
+  bottom:0;
+  height:20px;
+  color: white;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.module-progress-bar{
+  background:black;
+  display: inline-block;
+  padding:0;
+  margin:0;
+  height:20px;
+  width:22%;
+  border-radius: 5px;
+  text-align: center;
 }

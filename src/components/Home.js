@@ -5,7 +5,6 @@ import {
   Link
 } from 'react-router-dom';
 
-import '../App.css';
 
 class Home extends Component {
     constructor(props) {
@@ -19,7 +18,6 @@ class Home extends Component {
     render() {
       document.title = "Home";
       return (
-        <div>
           <div className="main-page-container">
             <div>
               <h1 className="bigTitle">Get to know your <span className="text-highlight">finances</span></h1>
@@ -41,8 +39,6 @@ class Home extends Component {
             */}
 
           </div>
-
-        </div>
       );
     }
 }
